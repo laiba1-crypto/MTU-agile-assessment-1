@@ -1,0 +1,128 @@
+*{ 
+	padding: 0; 
+	margin: 0; 
+	box-sizing: border-box; 
+	background: white; 
+	color: black; 
+} 
+a:link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+  }
+.game{ 
+	display: flex; 
+	flex-direction: column; 
+	height: 100vh; 
+	width: 100vw; 
+	justify-content: center; 
+	align-items: center; 
+} 
+
+.title{ 
+	position: absolute; 
+	top: 60px; 
+	font-size: 4rem; 
+	z-index: 2; 
+    color: black;
+} 
+
+.finalMSG{
+    margin-top: 400px; 
+    position: absolute;
+}
+
+.score{ 
+	display: flex; 
+	width: 30vw; 
+	justify-content: space-evenly; 
+	position: absolute; 
+	top: 600px; 
+	z-index: 1; 
+    color: black;
+} 
+
+.p-count,.c-count{ 
+	text-align: center; 
+	font-size: 1.5rem; 
+	margin-top: 1rem; 
+    color: black;
+} 
+
+.images{ 
+	display: flex; 
+	width: 50vw; 
+	justify-content: space-evenly; 
+	margin-top: -100px; 
+    position: absolute;
+}
+
+.options{
+    position: absolute; 
+	display: flex; 
+	width: 50vw; 
+	justify-content: space-evenly; 
+	margin-top: -330px; 
+}
+
+.help{
+    position: absolute; 
+	display: flex; 
+	width: 36.5vw; 
+	margin-top: 530px; 
+	margin-left: 580px;
+}
+
+
+.helpMe{
+	padding: 0.8rem; 
+	width: 100px; 
+	border-radius: 10px;
+	background: orange; 
+	outline: none;  
+	border: none; 
+	cursor: pointer;	
+}
+.reload { 
+    display: none; 
+    margin-top: -350px; 
+    padding: 1rem; 
+	border-radius: 10px; 
+    background: yellow; 
+    outline: none; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+.rock, .paper, .scissor{ 
+	padding: 0.8rem; 
+	width: 100px; 
+	border-radius: 10px; 
+	background: green; 
+	outline: none; 
+	border-color: green; 
+	border: none; 
+	cursor: pointer; 
+	color: white;
+} 
+
+.result{ 
+	margin-top: 450px; 
+	font-size: 1.2rem; 
+    position: absolute;
+} 
+
+@media screen and (max-width: 612px) 
+{ 
+	.title{ 
+		text-align: center; 
+	} 
+	.score{ 
+		position: absolute; 
+		top: 200px; 
+		width: 100vw; 
+	} 
+	.options{ 
+		width: 100vw; 
+	} 
+}
